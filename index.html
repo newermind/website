@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Newermind!</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background: url("./luca-upper-Z-4kOr93RCI-unsplash.jpg") no-repeat
+          center top;
+        background-size: cover;
+      }
+
+      .soon {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        font-size: 100px;
+        font-family: sans-serif;
+      }
+
+      .box-bg {
+        display: flex;
+        flex-direction: row;
+        background: #264653;
+        padding: 6px 3px;
+        transition: box-shadow 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+        -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+        -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+        animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+      }
+
+      @-webkit-keyframes myOrbit {
+        from {
+          -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);
+        }
+      }
+
+      @-moz-keyframes myOrbit {
+        from {
+          -moz-transform: rotate(0deg) translateX(10px) rotate(0deg);
+        }
+        to {
+          -moz-transform: rotate(360deg) translateX(10px) rotate(-360deg);
+        }
+      }
+
+      @-o-keyframes myOrbit {
+        from {
+          -o-transform: rotate(0deg) translateX(10px) rotate(0deg);
+        }
+        to {
+          -o-transform: rotate(360deg) translateX(10px) rotate(-360deg);
+        }
+      }
+
+      @keyframes myOrbit {
+        from {
+          transform: rotate(0deg) translateX(10px) rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg) translateX(10px) rotate(-360deg);
+        }
+      }
+
+      .box-bg:hover {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
+        cursor: help;
+      }
+
+      .box-bg div {
+        display: inline-block;
+        width: 10px;
+        height: 40px;
+        margin: 0 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="soon">
+      <div class="box-bg" title="newermind!">
+        <div style="background: #e76f51"></div>
+        <div style="background: #f4a261"></div>
+        <div style="background: #2a9d5b"></div>
+      </div>
+    </div>
+    <div>
+      <a
+        style='position: absolute;bottom: 10px; right: 10px; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px'
+        href="https://unsplash.com/@lucistan?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Download free do whatever you want high-resolution photos from Luca Upper"
+        ><span style="display:inline-block;padding:2px 3px"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+            viewBox="0 0 32 32"
+          >
+            <title>unsplash-logo</title>
+            <path
+              d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
+            ></path></svg></span
+        ><span style="display:inline-block;padding:2px 3px">Luca Upper</span></a
+      >
+    </div>
+  </body>
+</html>
